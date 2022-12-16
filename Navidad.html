@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Feli Navidad</title>
+
+    <meta charset="UTF-5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="whidth=device-width, initial-scale=1">
+
+    <style>
+        body {
+            background: url("images/fondo.jpg") no-repeat center center fixed;
+            background-size: cover;
+            margin: auto;
+            display: table;
+        }
+
+        .titulo {
+            text-align: center;
+            display: center;
+            width: 0;
+            margin: .5 auto;
+            white-space: nowrap;
+            font-size: 3rem;
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+            border-right: 0.15em solid #000000;
+            animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+            color: rgb(199, 168, 67);
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+
+        img {
+            position: absolute;
+            margin: 100px 450px;
+        }
+
+        .star {
+            position: absolute;
+            margin: 88px 300px;
+            width: 10%;
+            height: 14%;
+            background: #ffe380;
+            clip-path: polygon(50% 0%,
+                    61% 35%,
+                    98% 35%,
+                    68% 57%,
+                    79% 91%,
+                    50% 70%,
+                    21% 91%,
+                    32% 57%,
+                    2% 35%,
+                    39% 35%);
+            left: 26.5%;
+            top: 11%;
+            z-index: 4;
+        }
+
+        .star-highlight {
+            position: absolute;
+            margin: 88px 300px;
+            width: 10%;
+            height: 14%;
+            background: #fff1bf;
+            clip-path: polygon(50% 0%,
+                    61% 35%,
+                    98% 35%,
+                    68% 57%,
+                    79% 91%,
+                    50% 70%,
+                    50% 70%,
+                    50% 60%,
+                    50% 46%,
+                    50% 36%);
+            left: 26.5%;
+            top: 11%;
+            z-index: 4;
+        }
+
+        .star-light {
+            position: absolute;
+            margin: 88px 300px;
+            width: 10%;
+            height: 14%;
+            background: #fff1bf;
+            filter: opacity(0.7);
+            border-radius: 50%;
+            left: 26.5%;
+            top: 11%;
+            z-index: 3;
+            animation: star 3s ease-in-out infinite;
+        }
+
+        @keyframes star {
+            100% {
+                transform: scale(0.5);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            0% {
+                transform: scale(0.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="titulo">if christmas = true then Merry Chrismas!</h1>
+
+    <img class="foto1" src="images/tree.png" />
+    <img class="foto2" src="images/stars.png" />
+    <img class="foto3" src="images/lights.png" />
+
+
+    <div class="star-light"></div>
+    <div class="star"></div>
+    <div class="star-highlight"></div>
+
+    <script>
+
+
+
+
+    </script>
+
+</body>
+
+</html>
